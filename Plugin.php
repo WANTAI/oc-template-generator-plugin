@@ -1,4 +1,4 @@
-<?php namespace Lovata\TemplateGenerator;
+<?php namespace LOVATA\TemplateGenerator;
 
 use System\Classes\PluginBase;
 
@@ -13,13 +13,13 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'lovata.templategenerator::lang.plugin.name',
+            'name'        => 'Template Generator',
             'description' => 'lovata.templategenerator::lang.plugin.description',
             'author'      => 'LOVATA',
             'icon'        => 'oc-icon-skyatlas'
         ];
     }
-
+    
     public function registerComponents()
     {
     }

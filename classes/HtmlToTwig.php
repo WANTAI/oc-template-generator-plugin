@@ -1,10 +1,10 @@
-<?php namespace Lovata\TemplateGenerator\Classes;
+<?php namespace LOVATA\TemplateGenerator\Classes;
 
 /**
  * Класс предназначен для преобразования HTML верстки в twig шаблоны
- * @author Andrey Kharanenka, a.khoronenko@lovata.com, LOVATA Group
+ * @author Andrey Kharanenka, a.khoronenko@LOVATA.com, LOVATA Group
  * Class HtmlToTwig
- * @package Lovata\TemplateGenerator\Classes
+ * @package LOVATA\TemplateGenerator\Classes
  */
 class HtmlToTwig {
 

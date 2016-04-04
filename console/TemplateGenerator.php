@@ -1,4 +1,4 @@
-<?php namespace Lovata\TemplateGenerator\Console;
+<?php namespace LOVATA\TemplateGenerator\Console;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
