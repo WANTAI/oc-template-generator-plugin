@@ -1,30 +1,28 @@
-<?php namespace LOVATA\TemplateGenerator;
+<?php namespace Lovata\TemplateGenerator;
 
 use System\Classes\PluginBase;
 
-class Plugin extends PluginBase
-{
-
-    /**
-     * Returns information about this plugin.
-     *
-     * @return array
-     */
-    public function pluginDetails()
-    {
-        return [
-            'name'        => 'Template Generator',
-            'description' => 'lovata.templategenerator::lang.plugin.description',
-            'author'      => 'LOVATA',
-            'icon'        => 'oc-icon-skyatlas'
-        ];
-    }
+/**
+ * Class Plugin
+ * @package Lovata\TemplateGenerator
+ * @author Andrey Kharanenka, a.khoronenko@lovata.com, LOVATA Group
+ */
+class Plugin extends PluginBase {
     
-    public function registerComponents()
-    {
+    public function registerComponents() {
+        
     }
 
-    public function registerSettings()
+    public function registerSettings() {
+        
+    }
+
+    public function boot()
     {
+        $this->app->singleton('JtoT', function() {
+            return new \Lovata\TemplateGenerator\Console\TemplateGenerator;
+        });
+
+        $this->commands('JtoT');
     }
 }

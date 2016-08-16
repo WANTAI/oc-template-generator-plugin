@@ -1,6 +1,6 @@
 plugin:
-    name: 'LOVATA.templategenerator::lang.plugin.name'
-    description: 'LOVATA.templategenerator::lang.plugin.description'
-    author: LOVATA
+    name: 'lovata.templategenerator::lang.plugin.name'
+    description: 'lovata.templategenerator::lang.plugin.description'
+    author: Lovata
     icon: oc-icon-skyatlas
     homepage: ''

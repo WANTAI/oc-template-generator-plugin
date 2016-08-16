@@ -1,4 +1,6 @@
-<?php namespace LOVATA\TemplateGenerator\Console;
+<?php namespace Lovata\TemplateGenerator\Console;
+
+use Lovata\TemplateGenerator\Classes\HtmlToTwig;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
@@ -9,7 +11,7 @@ class TemplateGenerator extends Command {
     /**
      * @var string The console command name.
      */
-    protected $name = 'HtoT';
+    protected $name = 'JtoT';
 
     /**
      * @var string The console command description.
@@ -21,7 +23,7 @@ class TemplateGenerator extends Command {
      * @return void
      */
     public function fire() {
-        
+        HtmlToTwig::run();
     }
 
     /**
